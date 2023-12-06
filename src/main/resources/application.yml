@@ -1,0 +1,9 @@
+message:
+  env:  "dev"
+  text: "This message is from prod branch"
+
+config:
+  environment: "dev"
+  host: "localhost"
+  url: "devUrl"
+
