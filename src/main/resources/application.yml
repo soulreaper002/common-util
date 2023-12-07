@@ -1,9 +1,9 @@
 message:
-  env:  "dev"
-  text: "This message is from dev branch"
+  env:  "master"
+  text: "This message is from master branch"
 
 config:
-  environment: "dev"
+  environment: "master"
   host: "localhost"
-  url: "devUrl"
+  url: "masterUrl"
 
