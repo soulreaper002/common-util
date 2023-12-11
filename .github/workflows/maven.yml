@@ -12,7 +12,11 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - dev
+      - main
+      - master
+      
   workflow_call:
 
 jobs:
