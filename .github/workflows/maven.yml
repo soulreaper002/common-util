@@ -12,7 +12,12 @@ on:
   push:
     branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - dev
+      - main
+      - master
+
+  workflow_call:
 
 jobs:
   build:
@@ -33,7 +38,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: soulreaper002/common-util
+        image: soulreaper002/common-util-new
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
